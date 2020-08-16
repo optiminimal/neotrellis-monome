@@ -56,8 +56,6 @@ void MonomeSerialDevice::setAllLEDs(int value) {
 }
 
 void MonomeSerialDevice::setGridLed(uint8_t x, uint8_t y, uint8_t level) {
-//    int index = x + (y * columns);   
-//    if (index < MAXLEDCOUNT) leds[index] = level;
 
     if (x < columns && y < rows) {
       uint32_t index = y * columns + x;
